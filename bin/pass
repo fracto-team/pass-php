@@ -1,0 +1,11 @@
+<?php
+
+require '../vendor/autoload.php';
+
+$app = new Fracto\PassPHP\Application();
+
+try {
+    $app->run();
+} catch (Exception $e) {
+    exit(1);
+}
